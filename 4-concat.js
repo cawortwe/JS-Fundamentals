@@ -1,7 +1,3 @@
-const [, , first, second] = Process.argv;
+const [, , arg1, arg2] = Process.argv;
 
-if (first === undefined || second === undefined) {
-    console.log("No argument");
-} else {
-    console.log(`${first} is ${second}`);
-}
+console.log(`${arg1} is ${arg2}`);
